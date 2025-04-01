@@ -2,6 +2,7 @@ alembic==1.11.1
 aioconsole==0.6.2
 anthropic==0.8.1
 beautifulsoup4==4.12.2
+click
 chromadb==0.4.13
 edge-tts==6.1.9
 emoji==2.9.0
