@@ -16,6 +16,7 @@ import Footer from '../_components/Footer';
 import AvatarUploader from './_components/AvatarUploader';
 import BackgroundArea from './_components/BackgroundArea';
 import SystemPrompt from './_components/SystemPrompt';
+import ActionsList from './_components/ActionsList';
 import TTSVoice from './_components/TTSVoice';
 
 import { useEffect } from 'react';
@@ -82,6 +83,7 @@ export default function Create() {
         </div>
         <BackgroundArea />
         <SystemPrompt />
+        <ActionsList />
         <div>
           <Textarea
             label="User Prompt"
@@ -116,14 +118,14 @@ export default function Create() {
                 </div>
               }
             >
-              <Button
-                isIconOnly
-                size="sm"
-                variant="light"
-                className="p-0 min-w-unit-5 w-5 min-h-unit-5 h-5"
-              >
-                <MdInfoOutline size="1.5em" />
-              </Button>
+            <Button
+              isIconOnly
+              size="sm"
+              variant="light"
+              className="p-0 min-w-unit-5 w-5 min-h-unit-5 h-5"
+            >
+              <MdInfoOutline size="1.5em" />
+            </Button>
             </Tooltip>
           </h4>
           <RadioGroup
