@@ -28,10 +28,13 @@ export function useMyCharacters() {
 
   if (error) {
     console.log('error');
-    return;
+    return {
+      characters: [],
+      isLoading,
+    };
   }
   return {
-    characters: data,
+    characters: data || [],
     isLoading,
   };
 }

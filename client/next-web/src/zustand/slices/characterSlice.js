@@ -71,6 +71,7 @@ export const createCharacterSlice = (set, get) => ({
     tts: 'ELEVEN_LABS',
     voice_id: 'EXAVITQu4vr4xnSDxMaL', // Male: ErXwobaYiN019PkySvjV Female:
     visibility: 'private',
+    actions: [],
   },
   backgroundText: '',
   backgroundFiles: [],
@@ -364,6 +365,7 @@ export const createCharacterSlice = (set, get) => ({
         tts: 'ELEVEN_LABS',
         voice_id: 'EXAVITQu4vr4xnSDxMaL', // Male: ErXwobaYiN019PkySvjV Female:
         visibility: 'private',
+        actions: [],
       },
       backgroundText: '',
       backgroundFiles: [],
@@ -392,6 +394,7 @@ export const createCharacterSlice = (set, get) => ({
           tts: res.tts,
           voice_id: res.voice_id,
           visibility: res.visibility,
+          actions: res.actions || [],
         },
         backgroundText: res.background_text,
         backgroundFiles: [],
